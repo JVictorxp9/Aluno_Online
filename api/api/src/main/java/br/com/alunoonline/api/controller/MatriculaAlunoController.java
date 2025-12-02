@@ -39,4 +39,5 @@ public class MatriculaAlunoController {
     public HistoricoAlunoResponseDTO emitirHistorico(@PathVariable Long alunoId) {
         return matriculaAlunoService.emitirHistorico(alunoId);
     }
+} }
 }
