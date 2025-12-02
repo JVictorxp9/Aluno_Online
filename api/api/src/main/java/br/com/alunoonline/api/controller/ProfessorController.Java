@@ -1,4 +1,5 @@
 package br.com.alunoonline.api.controller;
+
 import br.com.alunoonline.api.model.Professor;
 import br.com.alunoonline.api.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,37 +12,38 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/professores")
 public class ProfessorController {
+
     @Autowired
     ProfessorService professorService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void criarProfessor(@RequestBody Professor Professor) {
-        professorService.criarProfessor(Professor);
+    public void criarProfessor (@RequestBody Professor professor) {
+        professorService.criarProfessor(professor);
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<Professor> buscarTodosProfessors() {
-        return professorService.buscarTodosProf();
+    public List<Professor> buscarTodosProfessores() {
+        return professorService.buscarTodosProfessores();
     }
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Optional<Professor> buscarProfessorPorId(@PathVariable Long id) {
+    public Optional<Professor> buscarProfessorPorId(@PathVariable long id) {
         return professorService.buscarProfessorPorId(id);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deletarProfessorPorId(@PathVariable Long id){
+    public void deletarProfessorPorId(@PathVariable long id) {
         professorService.deletarProfessorPorId(id);
     }
 
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void atualizarProfessor(@PathVariable Long id, @RequestBody Professor ProfessorAtualizado){
-        professorService.atualizarProfessor(id, ProfessorAtualizado);
+    public void atualizarProfessorPorId(@PathVariable long id, @RequestBody Professor professorAtualizado) {
+        professorService.atualizarProfessorPorId(id, professorAtualizado);
     }
 
 }
