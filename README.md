@@ -2,6 +2,18 @@
 
 📘 Descrição do Projeto
 
+## 📑 Sumário
+- [Descrição](#-descrição-do-projeto)
+- [Tecnologias](#-tecnologias-utilizadas)
+- [Arquitetura da Aplicação](#-arquitetura-da-aplicação)
+- [Como Rodar o Projeto](#-como-rodar-o-projeto)
+- [Requisitos](#-pré-requisitos)
+- [Endpoints](#-endpoints-principais)
+- [Banco de Dados](#-banco-de-dados)
+- [Estrutura do Projeto](#-estrutura-de-pastas)
+- [Autor](#-autor)
+
+
 A API Aluno Online foi desenvolvida por João Victor como projeto final das disciplinas Tecnologia para Back-End. Construída com Java (Spring Boot) e utilizando PostgreSQL, ela fornece serviços RESTful para gerenciar o fluxo acadêmico e acadêmico-administrativo de alunos.
 
 # A API permite:
@@ -22,15 +34,15 @@ Trancamento de matrícula
 
 Os testes foram realizados via Insomnia e o banco administrado pelo DBeaver.
 
-# Tecnologias Utilizadas
+# ⚙️ Tecnologias Utilizadas
 
-Java 17
+- Java 17
 
-Spring Boot
+- Spring Boot
 
-Maven
+= Maven
 
-PostgreSQL
+- PostgreSQL
 
 # Ferramentas de Apoio:
 
@@ -38,7 +50,7 @@ Insomnia – Testes das requisições HTTP
 
 DBeaver – Gerenciamento do banco de dados
 
-# Visão Geral dos Módulos
+# 🧩 Visão Geral dos Módulos
 
 | Módulo          | Descrição                        |
 | --------------- | -------------------------------- |
@@ -48,7 +60,9 @@ DBeaver – Gerenciamento do banco de dados
 | **Matrículas**  | Matrículas, notas e trancamentos |
 | **Histórico**   | Emissão do histórico acadêmico   |
 
-# Endpoints Principais
+# 🧠 Endpoints Principais
+
+# 👨‍🎓 Módulo Alunos
 
 | Método | Rota         | Descrição           |
 | ------ | ------------ | ------------------- |
@@ -58,7 +72,7 @@ DBeaver – Gerenciamento do banco de dados
 | PUT    | /alunos/{id} | Atualizar aluno     |
 | DELETE | /alunos/{id} | Remover aluno       |
 
-# Módulo Professor
+# 👨‍🏫 Módulo Professor
 
 | Método | Rota              | Descrição               |
 | ------ | ----------------- | ----------------------- |
@@ -68,7 +82,7 @@ DBeaver – Gerenciamento do banco de dados
 | PUT    | /professores/{id} | Atualizar professor     |
 | DELETE | /professores/{id} | Remover professor       |
 
-# Módulo Disciplinas
+# 📚 Módulo Disciplinas
 
 | Método | Rota              | Descrição                |
 | ------ | ----------------- | ------------------------ |
@@ -78,7 +92,7 @@ DBeaver – Gerenciamento do banco de dados
 | PUT    | /disciplinas/{id} | Atualizar disciplina     |
 | DELETE | /disciplinas/{id} | Remover disciplina       |
 
-# Módulo Matrículas & Histórico
+# 🎓 Módulo Matrículas & Histórico
 
 | Método | Rota                                   | Descrição         |
 | ------ | -------------------------------------- | ----------------- |
