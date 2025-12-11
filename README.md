@@ -22,11 +22,11 @@ A API Aluno Online foi desenvolvida por João Victor como projeto final das disc
 Os testes foram realizados via Insomnia e o banco administrado pelo DBeaver.
 
 ## 📌 Tecnologias Utilizadas 
-- **Java 17 instalado  
-- **Maven instalado  
-- **PostgreSQL configurado  
-- **Insomnia
-- **Dbeave
+- **Java 17 instalado** 
+- **Maven instalado**  
+- **PostgreSQL configurado**  
+- **Insomnia**
+- **Dbeave**
 
 ## 📂 Estrutura de Pastas
 
@@ -56,13 +56,39 @@ Essa arquitetura torna o projeto mais profissional e escalável, sendo ideal par
 
 ## 🧩 Visão Geral dos Módulos
 
-| Módulo          | Descrição                        |
-| --------------- | -------------------------------- |
-| **Alunos**      | CRUD completo de alunos          |
-| **Professores** | CRUD completo de professores     |
-| **Disciplinas** | CRUD completo de disciplinas     |
-| **Matrículas**  | Matrículas, notas e trancamentos |
-| **Histórico**   | Emissão do histórico acadêmico   |
+<h2 align="center">🧩 Visão Geral dos Módulos</h2>
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Módulo</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><strong>Alunos</strong></td>
+    <td>CRUD completo de alunos</td>
+  </tr>
+  <tr>
+    <td><strong>Professores</strong></td>
+    <td>CRUD completo de professores</td>
+  </tr>
+  <tr>
+    <td><strong>Disciplinas</strong></td>
+    <td>CRUD completo de disciplinas</td>
+  </tr>
+  <tr>
+    <td><strong>Matrículas</strong></td>
+    <td>Matrículas, notas e trancamentos</td>
+  </tr>
+  <tr>
+    <td><strong>Histórico</strong></td>
+    <td>Emissão do histórico acadêmico</td>
+  </tr>
+</table>
+
+</div>
+
 
 ## 🧠 Endpoints Principais
 
