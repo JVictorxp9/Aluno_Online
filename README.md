@@ -87,7 +87,7 @@ DBeaver – Gerenciamento do banco de dados
 | PATCH  | /matriculas/atualizar-notas/{id}       | Atualizar notas   |
 | GET    | /matriculas/emitir-historico/{alunoId} | Emitir histórico  |
 
-# Exemplos de Requisições (Insomnia)
+# Exemplos de Requisições Insomnia do Crud Aluno
 
 # POST /alunos – Criar Aluno
 
@@ -103,24 +103,112 @@ DBeaver – Gerenciamento do banco de dados
 
  # Banco de Dados – Alunos (PostgreSQL)
 
- 
-
-
-
-
-
 **Diagrama do banco de dados do projeto “Aluno Online”, mostrando as tabelas, relacionamentos e chaves primárias e estrangeiras utilizadas para armazenar informações dos alunos**
 
 ![image alt](https://github.com/JVictorxp9/Aluno_Online/blob/cd0e38f74b9883b63cb2a41c417b53b952f84192/Banco%20de%20Dados.PNG)
 
-**Interface de cadastro de um novo aluno no sistema, permitindo inserir informações como nome, matrícula, e dados pessoais.**
+# Exemplos de Requisições Insomnia do Crud Professor
 
-![image alt](https://github.com/JVictorxp9/Aluno_Online/blob/cd0e38f74b9883b63cb2a41c417b53b952f84192/criarAluno.PNG)
+# POST /professores – Criar Professor
 
-**Tela de busca de alunos, onde é possível pesquisar e visualizar rapidamente os registros cadastrados no sistema.**
+<img width="1600" height="747" alt="image" src="https://github.com/user-attachments/assets/41a759b8-4c55-4fd7-831d-3d9ea317c357" />
 
-![image alt](https://github.com/JVictorxp9/Aluno_Online/blob/cd0e38f74b9883b63cb2a41c417b53b952f84192/BuscarAluno.PNG)
+# GET /professores – Buscar Todos os Professores
 
-**Exemplo de consulta de um aluno específico pelo seu ID, mostrando os detalhes completos do registro retornado pelo sistema.**
+<img width="1600" height="752" alt="image" src="https://github.com/user-attachments/assets/9634e32f-88b1-4118-a185-c16368e3b0ce" />
 
-![image alt](https://github.com/JVictorxp9/Aluno_Online/blob/cd0e38f74b9883b63cb2a41c417b53b952f84192/buscarAlunosPorId.PNG)
+# GET /professores/{id} – Buscar Professor por ID
+
+<img width="1600" height="745" alt="image" src="https://github.com/user-attachments/assets/9b87de90-a1ff-47aa-91f1-4c33f0926f7b" />
+
+# PUT /professores/{id} – Atualizar Professor
+
+<img width="1600" height="742" alt="image" src="https://github.com/user-attachments/assets/34f1ab7f-ea75-4428-ac8d-6b613f0f02a0" />
+
+# DELETE /professores/{id} – Deletar Professor
+
+<img width="1600" height="749" alt="image" src="https://github.com/user-attachments/assets/77d03857-a118-4da8-be3e-f137adb8fa95" />
+
+# Banco de Dados – Professores (PostgreSQL)
+
+<img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/54fead0a-33f3-4f83-a841-d61e94669c59" />
+
+# Exemplos de Requisições Insomnia do Crud Disciplina
+
+# POST /disciplinas – Criar Disciplina
+
+<img width="1600" height="745" alt="image" src="https://github.com/user-attachments/assets/bcbf05c2-cc26-4b17-9c4c-db5826964a8b" />
+
+# GET /disciplinas – Buscar Todas as Disciplinas
+
+<img width="1600" height="736" alt="image" src="https://github.com/user-attachments/assets/1c8aa7b6-6e23-4cf6-94e7-127461659405" />
+
+# GET /disciplinas/{id} – Buscar Disciplina por ID
+
+<img width="1600" height="743" alt="image" src="https://github.com/user-attachments/assets/831efae0-2085-4adb-aa46-8ae2cc6bfad6" />
+
+# PUT /disciplinas/{id} – Atualizar Disciplina
+
+<img width="1600" height="745" alt="image" src="https://github.com/user-attachments/assets/54e39a60-7ead-4643-932d-bfc27de381f6" />
+
+# DELETE /disciplinas/{id} – Deletar Disciplina
+
+<img width="1600" height="740" alt="image" src="https://github.com/user-attachments/assets/8476a8a3-68d0-45d1-9054-c357d494256b" />
+
+# Banco de Dados – Disciplina (PostgreSQL)
+
+<img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/c0f0ad8b-947a-4f7c-abce-79cbb4f53fff" />
+
+# Testes no Insomnia – Matrículas & Histórico
+
+# POST /matriculas – Criar Matrícula
+
+<img width="1600" height="743" alt="image" src="https://github.com/user-attachments/assets/5a82e0f3-8e97-4baa-aa0b-a9ea71b5c764" />
+
+# PATCH /matriculas/atualizar-notas/{id} – Atualizar Notas da Matrícula
+
+<img width="1600" height="750" alt="image" src="https://github.com/user-attachments/assets/783c6805-f77c-425a-93de-e627f949028c" />
+
+# PATCH /matriculas/trancar/{id} – Trancar Matrícula
+
+<img width="1600" height="751" alt="image" src="https://github.com/user-attachments/assets/aa35f126-7a5e-421d-b4d5-8a10675535be" />
+
+# GET /matriculas/emitir-historico/{alunoId} – Emitir Histórico do Aluno
+
+<img width="1600" height="742" alt="image" src="https://github.com/user-attachments/assets/99e324bb-59bd-4a72-98d1-bce166c60c2e" />
+
+# Banco de Dados – matricula_aluno (PostgreSQL)
+
+<img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/9f9aa24c-596b-4743-9062-2edb1e956471" />
+
+✅ Considerações Finais
+
+A API segue a arquitetura padrão do Spring Boot.
+
+As respostas são retornadas em JSON.
+
+Todos os testes foram realizados via Insomnia.
+
+O banco foi acompanhado e validado no DBeaver
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
