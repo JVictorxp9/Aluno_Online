@@ -31,20 +31,28 @@ Os testes foram realizados via Insomnia e o banco administrado pelo DBeaver.
 
 ## 📂 Estrutura de Pastas
 
-src/
- └── main/
-     ├── java/
-     │    └── com/
-     │        └── alunoonline/
-     │             ├── controller/
-     │             ├── service/
-     │             ├── model/
-     │             ├── repository/
-     │             └── dto/
-     └── resources/
-          ├── application.properties
-          └── schema.sql
+## 🏛 Arquitetura e Estrutura do Projeto
 
+Este projeto segue o padrão **Arquitetura em Camadas (Layered Architecture)**, amplamente utilizado em aplicações Java com Spring Boot. Essa abordagem separa as responsabilidades da aplicação em partes independentes, tornando o código mais organizado, limpo e fácil de manter.
+
+A estrutura é dividida em camadas, cada uma com um papel específico:
+
+- **Controller** → Responsável por receber as requisições HTTP e expor os endpoints da aplicação.  
+- **Service** → Onde são aplicadas as regras de negócio e processamentos lógicos.  
+- **Repository** → Responsável pela comunicação com o banco de dados utilizando JPA/Hibernate.  
+- **Model (Entity)** → Classes que representam as entidades e tabelas do sistema.  
+- **DTO** → Objetos utilizados para transferência de dados entre as camadas (entrada e saída).  
+- **Resources** → Arquivos de configuração, como `application.properties`, scripts SQL e outros recursos.
+
+**Benefícios dessa arquitetura:**
+
+- Separação clara de responsabilidades  
+- Código mais modular e fácil de entender  
+- Melhor testabilidade das funcionalidades  
+- Facilita manutenção e evolução do projeto  
+- Segue boas práticas consolidadas do Spring Boot
+
+Essa arquitetura torna o projeto mais profissional e escalável, sendo ideal para APIs REST modernas.
 
 
 # 🧩 Visão Geral dos Módulos
