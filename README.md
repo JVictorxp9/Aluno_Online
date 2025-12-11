@@ -1,18 +1,6 @@
-# Sistema Aluno Online
+# 📑 Sistema Aluno Online
 
-📘 Descrição do Projeto
-
-## 📑 Sumário
 - [Descrição](#-descrição-do-projeto)
-- [Tecnologias](#-tecnologias-utilizadas)
-- [Arquitetura da Aplicação](#-arquitetura-da-aplicação)
-- [Como Rodar o Projeto](#-como-rodar-o-projeto)
-- [Requisitos](#-pré-requisitos)
-- [Endpoints](#-endpoints-principais)
-- [Banco de Dados](#-banco-de-dados)
-- [Estrutura do Projeto](#-estrutura-de-pastas)
-- [Autor](#-autor)
-
 
 A API Aluno Online foi desenvolvida por João Victor como projeto final das disciplinas Tecnologia para Back-End. Construída com Java (Spring Boot) e utilizando PostgreSQL, ela fornece serviços RESTful para gerenciar o fluxo acadêmico e acadêmico-administrativo de alunos.
 
@@ -34,21 +22,30 @@ Trancamento de matrícula
 
 Os testes foram realizados via Insomnia e o banco administrado pelo DBeaver.
 
-# ⚙️ Tecnologias Utilizadas
+## 📌 Tecnologias Utilizadas 
+- Java 17 instalado  
+- Maven instalado  
+- PostgreSQL configurado  
+- Insomnia
+- Dbeave
 
-- Java 17
+## 📂 Estrutura de Pastas
 
-- Spring Boot
+src/
+ └── main/
+     ├── java/
+     │    └── com/
+     │        └── alunoonline/
+     │             ├── controller/
+     │             ├── service/
+     │             ├── model/
+     │             ├── repository/
+     │             └── dto/
+     └── resources/
+          ├── application.properties
+          └── schema.sql
 
-= Maven
 
-- PostgreSQL
-
-# Ferramentas de Apoio:
-
-Insomnia – Testes das requisições HTTP
-
-DBeaver – Gerenciamento do banco de dados
 
 # 🧩 Visão Geral dos Módulos
 
@@ -195,15 +192,16 @@ DBeaver – Gerenciamento do banco de dados
 
 <img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/9f9aa24c-596b-4743-9062-2edb1e956471" />
 
-✅ Considerações Finais
 
-A API segue a arquitetura padrão do Spring Boot.
+## 📂 Considerações Finais
 
-As respostas são retornadas em JSON.
+- A API segue a arquitetura padrão do Spring Boot.
 
-Todos os testes foram realizados via Insomnia.
+- As respostas são retornadas em JSON.
 
-O banco foi acompanhado e validado no DBeaver
+- Todos os testes foram realizados via Insomnia.
+
+- O banco foi acompanhado e validado no DBeaver
 
 
 
