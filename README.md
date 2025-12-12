@@ -56,8 +56,6 @@ Essa arquitetura torna o projeto mais profissional e escalável, sendo ideal par
 
 ## 🧩 Visão Geral dos Módulos
 
-<h2 align="center">🧩 Visão Geral dos Módulos</h2>
-
 <div align="center">
 
 <table>
@@ -94,42 +92,158 @@ Essa arquitetura torna o projeto mais profissional e escalável, sendo ideal par
 
 ## 👨‍🎓 Módulo Alunos
 
-| Método | Rota         | Descrição           |
-| ------ | ------------ | ------------------- |
-| POST   | /alunos      | Cadastrar aluno     |
-| GET    | /alunos      | Listar alunos       |
-| GET    | /alunos/{id} | Buscar aluno por ID |
-| PUT    | /alunos/{id} | Atualizar aluno     |
-| DELETE | /alunos/{id} | Remover aluno       |
+<div align="center">
+
+<table>
+  <tr>
+    <th>Método</th>
+    <th>Rota</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><strong>POST</strong></td>
+    <td>/alunos</td>
+    <td>Cadastrar aluno</td>
+  </tr>
+  <tr>
+    <td><strong>GET</strong></td>
+    <td>/alunos</td>
+    <td>Listar alunos</td>
+  </tr>
+  <tr>
+    <td><strong>GET</strong></td>
+    <td>/alunos/{id}</td>
+    <td>Buscar aluno por ID</td>
+  </tr>
+  <tr>
+    <td><strong>PUT</strong></td>
+    <td>/alunos/{id}</td>
+    <td>Atualizar aluno</td>
+  </tr>
+  <tr>
+    <td><strong>DELETE</strong></td>
+    <td>/alunos/{id}</td>
+    <td>Remover aluno</td>
+  </tr>
+</table>
+
+</div>
+
 
 ## 👨‍🏫 Módulo Professor
 
-| Método | Rota              | Descrição               |
-| ------ | ----------------- | ----------------------- |
-| POST   | /professores      | Cadastrar professor     |
-| GET    | /professores      | Listar professores      |
-| GET    | /professores/{id} | Buscar professor por ID |
-| PUT    | /professores/{id} | Atualizar professor     |
-| DELETE | /professores/{id} | Remover professor       |
+<div align="center">
+
+<table>
+  <tr>
+    <th>Método</th>
+    <th>Rota</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><strong>POST</strong></td>
+    <td>/professores</td>
+    <td>Cadastrar professor</td>
+  </tr>
+  <tr>
+    <td><strong>GET</strong></td>
+    <td>/professores</td>
+    <td>Listar professores</td>
+  </tr>
+  <tr>
+    <td><strong>GET</strong></td>
+    <td>/professores/{id}</td>
+    <td>Buscar professor por ID</td>
+  </tr>
+  <tr>
+    <td><strong>PUT</strong></td>
+    <td>/professores/{id}</td>
+    <td>Atualizar professor</td>
+  </tr>
+  <tr>
+    <td><strong>DELETE</strong></td>
+    <td>/professores/{id}</td>
+    <td>Remover professor</td>
+  </tr>
+</table>
+
+</div>
+
 
 ## 📚 Módulo Disciplinas
 
-| Método | Rota              | Descrição                |
-| ------ | ----------------- | ------------------------ |
-| POST   | /disciplinas      | Cadastrar disciplina     |
-| GET    | /disciplinas      | Listar disciplinas       |
-| GET    | /disciplinas/{id} | Buscar disciplina por ID |
-| PUT    | /disciplinas/{id} | Atualizar disciplina     |
-| DELETE | /disciplinas/{id} | Remover disciplina       |
+<div align="center">
+
+<table>
+  <tr>
+    <th>Método</th>
+    <th>Rota</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><strong>POST</strong></td>
+    <td>/disciplinas</td>
+    <td>Cadastrar disciplina</td>
+  </tr>
+  <tr>
+    <td><strong>GET</strong></td>
+    <td>/disciplinas</td>
+    <td>Listar disciplinas</td>
+  </tr>
+  <tr>
+    <td><strong>GET</strong></td>
+    <td>/disciplinas/{id}</td>
+    <td>Buscar disciplina por ID</td>
+  </tr>
+  <tr>
+    <td><strong>PUT</strong></td>
+    <td>/disciplinas/{id}</td>
+    <td>Atualizar disciplina</td>
+  </tr>
+  <tr>
+    <td><strong>DELETE</strong></td>
+    <td>/disciplinas/{id}</td>
+    <td>Remover disciplina</td>
+  </tr>
+</table>
+
+</div>
+
 
 ## 🎓 Módulo Matrículas & Histórico
 
-| Método | Rota                                   | Descrição         |
-| ------ | -------------------------------------- | ----------------- |
-| POST   | /matriculas                            | Criar matrícula   |
-| PATCH  | /matriculas/trancar/{id}               | Trancar matrícula |
-| PATCH  | /matriculas/atualizar-notas/{id}       | Atualizar notas   |
-| GET    | /matriculas/emitir-historico/{alunoId} | Emitir histórico  |
+<div align="center">
+
+<table>
+  <tr>
+    <th>Método</th>
+    <th>Rota</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td><strong>POST</strong></td>
+    <td>/matriculas</td>
+    <td>Criar matrícula</td>
+  </tr>
+  <tr>
+    <td><strong>PATCH</strong></td>
+    <td>/matriculas/trancar/{id}</td>
+    <td>Trancar matrícula</td>
+  </tr>
+  <tr>
+    <td><strong>PATCH</strong></td>
+    <td>/matriculas/atualizar-notas/{id}</td>
+    <td>Atualizar notas</td>
+  </tr>
+  <tr>
+    <td><strong>GET</strong></td>
+    <td>/matriculas/emitir-historico/{alunoId}</td>
+    <td>Emitir histórico</td>
+  </tr>
+</table>
+
+</div>
+
 
 ## Exemplos de Requisições Insomnia do Crud Aluno
 
