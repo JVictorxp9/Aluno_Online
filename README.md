@@ -28,8 +28,6 @@ Os testes foram realizados via Insomnia e o banco administrado pelo DBeaver.
 - **Insomnia**
 - **Dbeave**
 
-## 📂 Estrutura de Pastas
-
 ## 🏛 Arquitetura e Estrutura do Projeto
 
 Este projeto segue o padrão **Arquitetura em Camadas (Layered Architecture)**, amplamente utilizado em aplicações Java com Spring Boot. Essa abordagem separa as responsabilidades da aplicação em partes independentes, tornando o código mais organizado, limpo e fácil de manter.
@@ -342,13 +340,147 @@ Essa arquitetura torna o projeto mais profissional e escalável, sendo ideal par
 
 ## 📂 Considerações Finais
 
-- A API segue a arquitetura padrão do Spring Boot.
+- **A API segue a arquitetura padrão do Spring Boot.**
 
-- As respostas são retornadas em JSON.
+- **As respostas são retornadas em JSON.**
 
-- Todos os testes foram realizados via Insomnia.
+- **Todos os testes foram realizados via Insomnia.**
 
-- O banco foi acompanhado e validado no DBeaver
+- **O banco foi acompanhado e validado no DBeaver.**
+
+
+## 📌 Exemplos de Requisições — CRUD Aluno
+
+### 📍 POST /alunos — Criar Aluno
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/375544c7-18d4-4184-a731-87762ecea497" />
+</p>
+
+### 📍 GET /alunos — Buscar Todos os Alunos
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/61eb4c31-7dcb-4d53-99dd-a41232779bfd" />
+</p>
+
+### 📍 GET /alunos/{id} — Buscar Aluno por ID
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/5c4b1ad6-7e7d-44d1-af4c-fa3da74dbd3f" />
+</p>
+
+---
+
+## 🗄️ Banco de Dados — Alunos (PostgreSQL)
+
+**Diagrama da tabela de alunos utilizada no sistema Aluno Online.**
+
+<p align="center">
+  <img width="100%" src="https://github.com/JVictorxp9/Aluno_Online/blob/cd0e38f74b9883b63cb2a41c417b53b952f84192/Banco%20de%20Dados.PNG" />
+</p>
+
+---
+
+## 📌 Exemplos de Requisições — CRUD Professor
+
+### 📍 POST /professores — Criar Professor
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/41a759b8-4c55-4fd7-831d-3d9ea317c357" />
+</p>
+
+### 📍 GET /professores — Buscar Todos os Professores
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/9634e32f-88b1-4118-a185-c16368e3b0ce" />
+</p>
+
+### 📍 GET /professores/{id} — Buscar Professor por ID
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/9b87de90-a1ff-47aa-91f1-4c33f0926f7b" />
+</p>
+
+### 📍 PUT /professores/{id} — Atualizar Professor
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/34f1ab7f-ea75-4428-ac8d-6b613f0f02a0" />
+</p>
+
+### 📍 DELETE /professores/{id} — Deletar Professor
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/77d03857-a118-4da8-be3e-f137adb8fa95" />
+</p>
+
+---
+
+## 🗄️ Banco de Dados — Professores (PostgreSQL)
+
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/54fead0a-33f3-4f83-a841-d61e94669c59" />
+</p>
+
+---
+
+## 📌 Exemplos de Requisições — CRUD Disciplina
+
+### 📍 POST /disciplinas — Criar Disciplina
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/bcbf05c2-cc26-4b17-9c4c-db5826964a8b" />
+</p>
+
+### 📍 GET /disciplinas — Buscar Todas as Disciplinas
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/1c8aa7b6-6e23-4cf6-94e7-127461659405" />
+</p>
+
+### 📍 GET /disciplinas/{id} — Buscar Disciplina por ID
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/831efae0-2085-4adb-aa46-8ae2cc6bfad6" />
+</p>
+
+### 📍 PUT /disciplinas/{id} — Atualizar Disciplina
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/54e39a60-7ead-4643-932d-bfc27de381f6" />
+</p>
+
+### 📍 DELETE /disciplinas/{id} — Deletar Disciplina
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/8476a8a3-68d0-45d1-9054-c357d494256b" />
+</p>
+
+---
+
+## 🗄️ Banco de Dados — Disciplina (PostgreSQL)
+
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/c0f0ad8b-947a-4f7c-abce-79cbb4f53fff" />
+</p>
+
+---
+
+## 📌 Testes no Insomnia — Matrículas & Histórico
+
+### 📍 POST /matriculas — Criar Matrícula
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/5a82e0f3-8e97-4baa-aa0b-a9ea71b5c764" />
+</p>
+
+### 📍 PATCH /matriculas/atualizar-notas/{id} — Atualizar Notas
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/783c6805-f77c-425a-93de-e627f949028c" />
+</p>
+
+### 📍 PATCH /matriculas/trancar/{id} — Trancar Matrícula
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/aa35f126-7a5e-421d-b4d5-8a10675535be" />
+</p>
+
+### 📍 GET /matriculas/emitir-historico/{alunoId} — Emitir Histórico
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/99e324bb-59bd-4a72-98d1-bce166c60c2e" />
+</p>
+
+---
+
+## 🗄️ Banco de Dados — matrícula_aluno (PostgreSQL)
+
+<p align="center">
+  <img width="100%" src="https://github.com/user-attachments/assets/9f9aa24c-596b-4743-9062-2edb1e956471" />
+</p>
 
 
 
